@@ -1,0 +1,151 @@
+\hypertarget{classMainWindow}{}\doxysection{Main\+Window Class Reference}
+\label{classMainWindow}\index{MainWindow@{MainWindow}}
+
+
+Klasa określa główne okienko aplikacje. W nim są wszystkie funkcje dotyczące wyświetlania.  
+
+
+
+
+{\ttfamily \#include $<$mainwindow.\+h$>$}
+
+
+
+Inheritance diagram for Main\+Window\+:
+% FIG 0
+
+
+Collaboration diagram for Main\+Window\+:
+% FIG 1
+\doxysubsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classMainWindow_a3088e1526357dc1b6bcac3d11bf83f18}{set\+Sensor\+\_\+data\+\_\+label}} (int c1, int c2, int c3, int c4, int c5, int c6)
+\item 
+void \mbox{\hyperlink{classMainWindow_a2c31517c9b582a4dc714077df64a5d18}{set\+Motor\+\_\+data\+\_\+label}} (int dir1, int pwm1, int dir2, int pwm2)
+\item 
+\mbox{\Hypertarget{classMainWindow_a99e059f30ec251fd5bfddf535e583e09}\label{classMainWindow_a99e059f30ec251fd5bfddf535e583e09}} 
+void {\bfseries Gdy\+Napis} (const Q\+String \&Napis)
+\item 
+void \mbox{\hyperlink{classMainWindow_a9b51862580160a8f77304151714ee6dd}{Gdy\+Sekunda}} ()
+\item 
+void \mbox{\hyperlink{classMainWindow_a2e584b98c44a3491be46eb7f157de547}{set\+Background}} ()
+\item 
+void \mbox{\hyperlink{classMainWindow_ae8c68bc07aa81721a9c09000d1673918}{set\+Arrows}} (double pwm\+\_\+left, double pwm\+\_\+right)
+\item 
+void \mbox{\hyperlink{classMainWindow_a331d3e6dad11c24f1e8b786e4ffc3924}{set\+Buttons}} ()
+\item 
+void \mbox{\hyperlink{classMainWindow_addc9d7d048db6c28978c085b949cd775}{set\+Labels}} ()
+\item 
+void \mbox{\hyperlink{classMainWindow_a768d65a8b796be024da5e3ac524c839d}{set\+Battery}} (double battery\+\_\+state)
+\end{DoxyCompactItemize}
+\doxysubsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classMainWindow_a23d12cb977c121aa69b7bc1cf8459f5b}\label{classMainWindow_a23d12cb977c121aa69b7bc1cf8459f5b}} 
+void {\bfseries Zglos\+Napis} (const Q\+String \&)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classMainWindow_aefe35f8332b000ccc70e2f7b61b685bd}\label{classMainWindow_aefe35f8332b000ccc70e2f7b61b685bd}} 
+{\bfseries Main\+Window} (\mbox{\hyperlink{classDaneSensoryczne}{Dane\+Sensoryczne}} $\ast$D\+S\+E\+N\+S\+O\+R\+Y\+C\+Z\+NE, \mbox{\hyperlink{classDaneSilnikowe}{Dane\+Silnikowe}} $\ast$D\+S\+I\+L\+N\+I\+K\+O\+WE, Q\+Widget $\ast$parent=nullptr)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa określa główne okienko aplikacje. W nim są wszystkie funkcje dotyczące wyświetlania. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classMainWindow_a9b51862580160a8f77304151714ee6dd}\label{classMainWindow_a9b51862580160a8f77304151714ee6dd}} 
+\index{MainWindow@{MainWindow}!GdySekunda@{GdySekunda}}
+\index{GdySekunda@{GdySekunda}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{GdySekunda}{GdySekunda}}
+{\footnotesize\ttfamily void Main\+Window\+::\+Gdy\+Sekunda (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Funkcja \char`\"{}nasłuchująca\char`\"{} dane oraz wykonująca się w nieskończoność, w celu ciągłej aktualizacji danych dot. czujników. \mbox{\Hypertarget{classMainWindow_ae8c68bc07aa81721a9c09000d1673918}\label{classMainWindow_ae8c68bc07aa81721a9c09000d1673918}} 
+\index{MainWindow@{MainWindow}!setArrows@{setArrows}}
+\index{setArrows@{setArrows}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{setArrows}{setArrows}}
+{\footnotesize\ttfamily void Main\+Window\+::set\+Arrows (\begin{DoxyParamCaption}\item[{double}]{pwm\+\_\+left,  }\item[{double}]{pwm\+\_\+right }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Funkcja przedstawiająca wizualnie kierunek i prędkość kół za pomocą strzałek, zmieniających swój rozmiar. 
+\begin{DoxyParams}{Parameters}
+{\em pwm\+\_\+left} & -\/ zmienna przechowująca informacje o wypełnieniu P\+WM lewego silnika. \\
+\hline
+{\em pwm\+\_\+right} & -\/ zmienna przechowująca informacje o wypełnieniu P\+WM prawego silnika. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classMainWindow_a2e584b98c44a3491be46eb7f157de547}\label{classMainWindow_a2e584b98c44a3491be46eb7f157de547}} 
+\index{MainWindow@{MainWindow}!setBackground@{setBackground}}
+\index{setBackground@{setBackground}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{setBackground}{setBackground}}
+{\footnotesize\ttfamily void Main\+Window\+::set\+Background (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Funkcja konfigurująca wygląd tła aplikacji. \mbox{\Hypertarget{classMainWindow_a768d65a8b796be024da5e3ac524c839d}\label{classMainWindow_a768d65a8b796be024da5e3ac524c839d}} 
+\index{MainWindow@{MainWindow}!setBattery@{setBattery}}
+\index{setBattery@{setBattery}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{setBattery}{setBattery}}
+{\footnotesize\ttfamily void Main\+Window\+::set\+Battery (\begin{DoxyParamCaption}\item[{double}]{battery\+\_\+state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Funkcja przedstawiająca wizualnie stan naładowania akumulatora. 
+\begin{DoxyParams}{Parameters}
+{\em battery\+\_\+state} & -\/ przetrzymuje informacje o aktualnym stanie baterii. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classMainWindow_a331d3e6dad11c24f1e8b786e4ffc3924}\label{classMainWindow_a331d3e6dad11c24f1e8b786e4ffc3924}} 
+\index{MainWindow@{MainWindow}!setButtons@{setButtons}}
+\index{setButtons@{setButtons}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{setButtons}{setButtons}}
+{\footnotesize\ttfamily void Main\+Window\+::set\+Buttons (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Funkcja wyświetlająca dane dot. silników w tabelii. \mbox{\Hypertarget{classMainWindow_addc9d7d048db6c28978c085b949cd775}\label{classMainWindow_addc9d7d048db6c28978c085b949cd775}} 
+\index{MainWindow@{MainWindow}!setLabels@{setLabels}}
+\index{setLabels@{setLabels}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{setLabels}{setLabels}}
+{\footnotesize\ttfamily void Main\+Window\+::set\+Labels (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Funkcja konfigurująca wygląd tabel itp (np. ustawienie poziomu przezroczystości). \mbox{\Hypertarget{classMainWindow_a2c31517c9b582a4dc714077df64a5d18}\label{classMainWindow_a2c31517c9b582a4dc714077df64a5d18}} 
+\index{MainWindow@{MainWindow}!setMotor\_data\_label@{setMotor\_data\_label}}
+\index{setMotor\_data\_label@{setMotor\_data\_label}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{setMotor\_data\_label}{setMotor\_data\_label}}
+{\footnotesize\ttfamily void Main\+Window\+::set\+Motor\+\_\+data\+\_\+label (\begin{DoxyParamCaption}\item[{int}]{dir1,  }\item[{int}]{pwm1,  }\item[{int}]{dir2,  }\item[{int}]{pwm2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Funkcja wyświetlająca dane dot. silników w tabelii. 
+\begin{DoxyParams}{Parameters}
+{\em dir1} & -\/ kierunek obrotu pierwszego silnika. \\
+\hline
+{\em pwm1} & -\/ wypełnienie P\+WM dla pierwszego silnika. \\
+\hline
+{\em dir2} & -\/ kierunek obrotu drugiego silnika. \\
+\hline
+{\em pwm2} & -\/ wypełnienie P\+WM dla drugiego silnika. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classMainWindow_a3088e1526357dc1b6bcac3d11bf83f18}\label{classMainWindow_a3088e1526357dc1b6bcac3d11bf83f18}} 
+\index{MainWindow@{MainWindow}!setSensor\_data\_label@{setSensor\_data\_label}}
+\index{setSensor\_data\_label@{setSensor\_data\_label}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{setSensor\_data\_label}{setSensor\_data\_label}}
+{\footnotesize\ttfamily void Main\+Window\+::set\+Sensor\+\_\+data\+\_\+label (\begin{DoxyParamCaption}\item[{int}]{c1,  }\item[{int}]{c2,  }\item[{int}]{c3,  }\item[{int}]{c4,  }\item[{int}]{c5,  }\item[{int}]{c6 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Funkcja wyświetlająca dane czujnikowe w tabelii. 
+\begin{DoxyParams}{Parameters}
+{\em c1} & -\/ wartość odczytana z czujnika 1. \\
+\hline
+{\em c2} & -\/ wartość odczytana z czujnika 2. \\
+\hline
+{\em c3} & -\/ wartość odczytana z czujnika 3. \\
+\hline
+{\em c4} & -\/ wartość odczytana z czujnika 4. \\
+\hline
+{\em c5} & -\/ wartość odczytana z czujnika 5. \\
+\hline
+{\em c6} & -\/ wartość odczytana z czujnika 6. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+mainwindow.\+h\item 
+mainwindow.\+cpp\end{DoxyCompactItemize}

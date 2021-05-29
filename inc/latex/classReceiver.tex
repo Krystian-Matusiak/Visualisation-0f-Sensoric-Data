@@ -1,0 +1,93 @@
+\hypertarget{classReceiver}{}\doxysection{Receiver Class Reference}
+\label{classReceiver}\index{Receiver@{Receiver}}
+
+
+Klasa odpowiadająca za otrzymywanie danych z innego urządzenia.  
+
+
+
+
+{\ttfamily \#include $<$Receiver.\+h$>$}
+
+
+
+Collaboration diagram for Receiver\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classReceiver_a72b4bdc0a31c2788c5188997b4cedb54}{Odbierz}} (int Gn\+Odbioru)
+\item 
+int \mbox{\hyperlink{classReceiver_a02b3c6e2005ad7457fcda444f276da12}{Uruchom\+Server}} (int Port)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+char \mbox{\hyperlink{classReceiver_a4851a22355bf3243488685cec8f55092}{D\+A\+NA}} \mbox{[}R\+O\+ZM\mbox{]}
+\item 
+char \mbox{\hyperlink{classReceiver_a9f44c5eeba75aac043527b352da16b90}{info1}} \mbox{[}11\mbox{]}\mbox{[}R\+O\+ZM\mbox{]}
+\item 
+\mbox{\hyperlink{classDaneSensoryczne}{Dane\+Sensoryczne}} $\ast$ \mbox{\hyperlink{classReceiver_a910465f03076e62db3b71a99caba374a}{D\+Sens}} = new \mbox{\hyperlink{classDaneSensoryczne}{Dane\+Sensoryczne}}
+\item 
+\mbox{\hyperlink{classDaneSilnikowe}{Dane\+Silnikowe}} $\ast$ \mbox{\hyperlink{classReceiver_ab35b818abe15b20de5eaa664bc42878f}{D\+Silniki}} = new \mbox{\hyperlink{classDaneSilnikowe}{Dane\+Silnikowe}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa odpowiadająca za otrzymywanie danych z innego urządzenia. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classReceiver_a72b4bdc0a31c2788c5188997b4cedb54}\label{classReceiver_a72b4bdc0a31c2788c5188997b4cedb54}} 
+\index{Receiver@{Receiver}!Odbierz@{Odbierz}}
+\index{Odbierz@{Odbierz}!Receiver@{Receiver}}
+\doxysubsubsection{\texorpdfstring{Odbierz()}{Odbierz()}}
+{\footnotesize\ttfamily int Receiver\+::\+Odbierz (\begin{DoxyParamCaption}\item[{int}]{Gn\+Odbioru }\end{DoxyParamCaption})}
+
+Funkcja odpowiadająca za odbieranie danych i przypisanie ich do konkretnych klas. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em Gn\+Odbioru} & -\/ deskryptor gniazda. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classReceiver_a02b3c6e2005ad7457fcda444f276da12}\label{classReceiver_a02b3c6e2005ad7457fcda444f276da12}} 
+\index{Receiver@{Receiver}!UruchomServer@{UruchomServer}}
+\index{UruchomServer@{UruchomServer}!Receiver@{Receiver}}
+\doxysubsubsection{\texorpdfstring{UruchomServer()}{UruchomServer()}}
+{\footnotesize\ttfamily int Receiver\+::\+Uruchom\+Server (\begin{DoxyParamCaption}\item[{int}]{Port }\end{DoxyParamCaption})}
+
+Funkcja aktywująca stan \char`\"{}nasłuchiwania\char`\"{}. Gdy dane się pojawią, aktywowana jest funkcja Odbierz, aby przyjąć dane. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em Port} & -\/ zmienna, która odnosi się do otworzonego portu komunikacyjnego. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classReceiver_a4851a22355bf3243488685cec8f55092}\label{classReceiver_a4851a22355bf3243488685cec8f55092}} 
+\index{Receiver@{Receiver}!DANA@{DANA}}
+\index{DANA@{DANA}!Receiver@{Receiver}}
+\doxysubsubsection{\texorpdfstring{DANA}{DANA}}
+{\footnotesize\ttfamily char Receiver\+::\+D\+A\+NA\mbox{[}R\+O\+ZM\mbox{]}}
+
+Zmienna, do której przekazywany będzie ciąg znaków, przesyłany przez socket\textquotesingle{}y. \mbox{\Hypertarget{classReceiver_a910465f03076e62db3b71a99caba374a}\label{classReceiver_a910465f03076e62db3b71a99caba374a}} 
+\index{Receiver@{Receiver}!DSens@{DSens}}
+\index{DSens@{DSens}!Receiver@{Receiver}}
+\doxysubsubsection{\texorpdfstring{DSens}{DSens}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classDaneSensoryczne}{Dane\+Sensoryczne}}$\ast$ Receiver\+::\+D\+Sens = new \mbox{\hyperlink{classDaneSensoryczne}{Dane\+Sensoryczne}}}
+
+Klasa, do której zapisywane będą dane sensoryczne, otrzymane z komunikacji \mbox{\Hypertarget{classReceiver_ab35b818abe15b20de5eaa664bc42878f}\label{classReceiver_ab35b818abe15b20de5eaa664bc42878f}} 
+\index{Receiver@{Receiver}!DSilniki@{DSilniki}}
+\index{DSilniki@{DSilniki}!Receiver@{Receiver}}
+\doxysubsubsection{\texorpdfstring{DSilniki}{DSilniki}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classDaneSilnikowe}{Dane\+Silnikowe}}$\ast$ Receiver\+::\+D\+Silniki = new \mbox{\hyperlink{classDaneSilnikowe}{Dane\+Silnikowe}}}
+
+Klasa, do której zapisywane będą dane silnikowe, otrzymane z komunikacji \mbox{\Hypertarget{classReceiver_a9f44c5eeba75aac043527b352da16b90}\label{classReceiver_a9f44c5eeba75aac043527b352da16b90}} 
+\index{Receiver@{Receiver}!info1@{info1}}
+\index{info1@{info1}!Receiver@{Receiver}}
+\doxysubsubsection{\texorpdfstring{info1}{info1}}
+{\footnotesize\ttfamily char Receiver\+::info1\mbox{[}11\mbox{]}\mbox{[}R\+O\+ZM\mbox{]}}
+
+Zmienna, które przechowują 6 danych czujnikowych, wypełnienie sygnału P\+WM dla każdego z dwóch silników, kierunek obrotu tych silników oraz stopień naładowania akumulatora. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Receiver.\+h\end{DoxyCompactItemize}

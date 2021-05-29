@@ -1,0 +1,64 @@
+\hypertarget{classDaneSensoryczne}{}\doxysection{Dane\+Sensoryczne Class Reference}
+\label{classDaneSensoryczne}\index{DaneSensoryczne@{DaneSensoryczne}}
+
+
+Klasa przechowująca dane dotyczące wykonanych pomiarów (czujniki i bateria).  
+
+
+
+
+{\ttfamily \#include $<$Dane\+Sensoryczne.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classDaneSensoryczne_a9b62f08f7889934b9276d7b9b4b7581b}{set\+Sensors}} (char parse\+\_\+sensors\mbox{[}11\mbox{]}\mbox{[}R\+O\+ZM\mbox{]})
+\item 
+void \mbox{\hyperlink{classDaneSensoryczne_a61cef17f62e0502a8fe7d06b3c4bedcd}{set\+Batt}} (char parse\+\_\+batt\mbox{[}4\mbox{]})
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classDaneSensoryczne_a918974eed72ebdd3bfe34e8b8c2f9ba4}\label{classDaneSensoryczne_a918974eed72ebdd3bfe34e8b8c2f9ba4}} 
+char {\bfseries info1} \mbox{[}11\mbox{]}\mbox{[}R\+O\+ZM\mbox{]}
+\item 
+\mbox{\Hypertarget{classDaneSensoryczne_ae6fdb9dfe9084650fe241511c7b583ce}\label{classDaneSensoryczne_ae6fdb9dfe9084650fe241511c7b583ce}} 
+double {\bfseries Czujniki\+Odb} \mbox{[}6\mbox{]}
+\item 
+\mbox{\Hypertarget{classDaneSensoryczne_a9d0c940f4f984a6d6854da5556a817c0}\label{classDaneSensoryczne_a9d0c940f4f984a6d6854da5556a817c0}} 
+double {\bfseries batt}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa przechowująca dane dotyczące wykonanych pomiarów (czujniki i bateria). 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classDaneSensoryczne_a61cef17f62e0502a8fe7d06b3c4bedcd}\label{classDaneSensoryczne_a61cef17f62e0502a8fe7d06b3c4bedcd}} 
+\index{DaneSensoryczne@{DaneSensoryczne}!setBatt@{setBatt}}
+\index{setBatt@{setBatt}!DaneSensoryczne@{DaneSensoryczne}}
+\doxysubsubsection{\texorpdfstring{setBatt()}{setBatt()}}
+{\footnotesize\ttfamily void Dane\+Sensoryczne\+::set\+Batt (\begin{DoxyParamCaption}\item[{char}]{parse\+\_\+batt\mbox{[}4\mbox{]} }\end{DoxyParamCaption})}
+
+Wypełnia daną, związaną z poziomem naładowania akumulatora 
+\begin{DoxyParams}{Parameters}
+{\em parse\+\_\+batt} & -\/ tablica, przechowująca dane o aktualnym napięciu akumulatora. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classDaneSensoryczne_a9b62f08f7889934b9276d7b9b4b7581b}\label{classDaneSensoryczne_a9b62f08f7889934b9276d7b9b4b7581b}} 
+\index{DaneSensoryczne@{DaneSensoryczne}!setSensors@{setSensors}}
+\index{setSensors@{setSensors}!DaneSensoryczne@{DaneSensoryczne}}
+\doxysubsubsection{\texorpdfstring{setSensors()}{setSensors()}}
+{\footnotesize\ttfamily void Dane\+Sensoryczne\+::set\+Sensors (\begin{DoxyParamCaption}\item[{char}]{parse\+\_\+sensors\mbox{[}11\mbox{]}\mbox{[}\+R\+O\+Z\+M\mbox{]} }\end{DoxyParamCaption})}
+
+Uzupełnia dane pobrane z czujników odbiciowych. 
+\begin{DoxyParams}{Parameters}
+{\em parse\+\_\+sensors} & -\/ zestaw danych, przechowujących informacje o odczytach z czujników. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Dane\+Sensoryczne.\+h\item 
+Dane\+Sensoryczne.\+cpp\end{DoxyCompactItemize}

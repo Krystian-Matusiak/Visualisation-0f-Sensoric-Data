@@ -1,0 +1,217 @@
+\hypertarget{classMainWindow}{}\doxysection{Main\+Window Class Reference}
+\label{classMainWindow}\index{MainWindow@{MainWindow}}
+
+
+Klasa określa główne okienko aplikacje. W nim są wszystkie funkcje dotyczące wyświetlania.  
+
+
+
+
+{\ttfamily \#include $<$mainwindow.\+h$>$}
+
+
+
+Inheritance diagram for Main\+Window\+:
+% FIG 0
+
+
+Collaboration diagram for Main\+Window\+:
+% FIG 1
+\doxysubsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classMainWindow_a3088e1526357dc1b6bcac3d11bf83f18}{set\+Sensor\+\_\+data\+\_\+label}} (int c1, int c2, int c3, int c4, int c5, int c6)
+\item 
+void \mbox{\hyperlink{classMainWindow_a2c31517c9b582a4dc714077df64a5d18}{set\+Motor\+\_\+data\+\_\+label}} (int dir1, int pwm1, int dir2, int pwm2)
+\item 
+void \mbox{\hyperlink{classMainWindow_a9b51862580160a8f77304151714ee6dd}{Gdy\+Sekunda}} ()
+\item 
+void \mbox{\hyperlink{classMainWindow_a2e584b98c44a3491be46eb7f157de547}{set\+Background}} ()
+\item 
+void \mbox{\hyperlink{classMainWindow_a43d921e84af57548a4782dc13091d25a}{set\+Arrows}} (double pwm\+\_\+left, double pwm\+\_\+right, bool dir\+\_\+left, bool dir\+\_\+right)
+\item 
+void \mbox{\hyperlink{classMainWindow_a331d3e6dad11c24f1e8b786e4ffc3924}{set\+Buttons}} ()
+\item 
+void \mbox{\hyperlink{classMainWindow_addc9d7d048db6c28978c085b949cd775}{set\+Labels}} ()
+\item 
+void \mbox{\hyperlink{classMainWindow_a5222646e2d14fd3d3676281a6e4693ea}{set\+Battery}} (double $\ast$battery\+\_\+state)
+\item 
+void \mbox{\hyperlink{classMainWindow_a2b4d6afa009628730895e64360c8fccc}{Right\+B\+\_\+\+Clicked}} ()
+\item 
+void \mbox{\hyperlink{classMainWindow_a29f3c712827e6090aba691dc7226e17d}{Left\+B\+\_\+\+Clicked}} ()
+\item 
+void \mbox{\hyperlink{classMainWindow_a055f2924e36f56ef13311d391cc0c87e}{Up\+B\+\_\+\+Clicked}} ()
+\item 
+void \mbox{\hyperlink{classMainWindow_aeb5b06fd941816a959f62f78432a0010}{Down\+B\+\_\+\+Clicked}} ()
+\item 
+void \mbox{\hyperlink{classMainWindow_ae92dd5896a0cbacfa605569488606169}{Change\+Mode\+B\+\_\+\+Clicked}} ()
+\item 
+void \mbox{\hyperlink{classMainWindow_a2d4c336260671a8660b96b6064563217}{Right\+B\+\_\+\+Released}} ()
+\item 
+void \mbox{\hyperlink{classMainWindow_aec2091baa23f8cd374f97eab42b80a1f}{Left\+B\+\_\+\+Released}} ()
+\item 
+void \mbox{\hyperlink{classMainWindow_ac0a3f2d4f58312212f90eecb21dd50a6}{Up\+B\+\_\+\+Released}} ()
+\item 
+void \mbox{\hyperlink{classMainWindow_a7f58b6e9669c1d03611037574ae59e84}{Down\+B\+\_\+\+Released}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classMainWindow_a5cab7f1404c11626b8d4a182d5c31308}\label{classMainWindow_a5cab7f1404c11626b8d4a182d5c31308}} 
+{\bfseries Main\+Window} (\mbox{\hyperlink{classDaneSensoryczne}{Dane\+Sensoryczne}} $\ast$D\+S\+E\+N\+S\+O\+R\+Y\+C\+Z\+NE, \mbox{\hyperlink{classDaneSilnikowe}{Dane\+Silnikowe}} $\ast$D\+S\+I\+L\+N\+I\+K\+O\+WE, \mbox{\hyperlink{classTransmitter}{Transmitter}} $\ast$transmit, Q\+Widget $\ast$parent=nullptr)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa określa główne okienko aplikacje. W nim są wszystkie funkcje dotyczące wyświetlania. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classMainWindow_ae92dd5896a0cbacfa605569488606169}\label{classMainWindow_ae92dd5896a0cbacfa605569488606169}} 
+\index{MainWindow@{MainWindow}!ChangeModeB\_Clicked@{ChangeModeB\_Clicked}}
+\index{ChangeModeB\_Clicked@{ChangeModeB\_Clicked}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{ChangeModeB\_Clicked}{ChangeModeB\_Clicked}}
+{\footnotesize\ttfamily void Main\+Window\+::\+Change\+Mode\+B\+\_\+\+Clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Funkcja, powodująca przełączanie trybów poruszania się. Dostępne są sterowanie automatyczne oraz ręczne. \mbox{\Hypertarget{classMainWindow_aeb5b06fd941816a959f62f78432a0010}\label{classMainWindow_aeb5b06fd941816a959f62f78432a0010}} 
+\index{MainWindow@{MainWindow}!DownB\_Clicked@{DownB\_Clicked}}
+\index{DownB\_Clicked@{DownB\_Clicked}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{DownB\_Clicked}{DownB\_Clicked}}
+{\footnotesize\ttfamily void Main\+Window\+::\+Down\+B\+\_\+\+Clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Funkcja, wykonująca się podczas naciśnięcia przycisku. Powoduje wysłanie do robota sygnału, powodującego jazdę do tyłu. \mbox{\Hypertarget{classMainWindow_a7f58b6e9669c1d03611037574ae59e84}\label{classMainWindow_a7f58b6e9669c1d03611037574ae59e84}} 
+\index{MainWindow@{MainWindow}!DownB\_Released@{DownB\_Released}}
+\index{DownB\_Released@{DownB\_Released}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{DownB\_Released}{DownB\_Released}}
+{\footnotesize\ttfamily void Main\+Window\+::\+Down\+B\+\_\+\+Released (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Funkcja, wykonująca się podczas puszczenia przycisku. Powoduje zakończenie ruchu (zatrzymuje robota). \mbox{\Hypertarget{classMainWindow_a9b51862580160a8f77304151714ee6dd}\label{classMainWindow_a9b51862580160a8f77304151714ee6dd}} 
+\index{MainWindow@{MainWindow}!GdySekunda@{GdySekunda}}
+\index{GdySekunda@{GdySekunda}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{GdySekunda}{GdySekunda}}
+{\footnotesize\ttfamily void Main\+Window\+::\+Gdy\+Sekunda (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Funkcja \char`\"{}nasłuchująca\char`\"{} dane oraz wykonująca się w nieskończoność, w celu ciągłej aktualizacji danych dot. czujników. \mbox{\Hypertarget{classMainWindow_a29f3c712827e6090aba691dc7226e17d}\label{classMainWindow_a29f3c712827e6090aba691dc7226e17d}} 
+\index{MainWindow@{MainWindow}!LeftB\_Clicked@{LeftB\_Clicked}}
+\index{LeftB\_Clicked@{LeftB\_Clicked}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{LeftB\_Clicked}{LeftB\_Clicked}}
+{\footnotesize\ttfamily void Main\+Window\+::\+Left\+B\+\_\+\+Clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Funkcja, wykonująca się podczas naciśnięcia przycisku. Powoduje wysłanie do robota sygnału do robota, powodującego skręt w lewo. \mbox{\Hypertarget{classMainWindow_aec2091baa23f8cd374f97eab42b80a1f}\label{classMainWindow_aec2091baa23f8cd374f97eab42b80a1f}} 
+\index{MainWindow@{MainWindow}!LeftB\_Released@{LeftB\_Released}}
+\index{LeftB\_Released@{LeftB\_Released}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{LeftB\_Released}{LeftB\_Released}}
+{\footnotesize\ttfamily void Main\+Window\+::\+Left\+B\+\_\+\+Released (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Funkcja, wykonująca się podczas puszczenia przycisku. Powoduje zakończenie ruchu (zatrzymuje robota). \mbox{\Hypertarget{classMainWindow_a2b4d6afa009628730895e64360c8fccc}\label{classMainWindow_a2b4d6afa009628730895e64360c8fccc}} 
+\index{MainWindow@{MainWindow}!RightB\_Clicked@{RightB\_Clicked}}
+\index{RightB\_Clicked@{RightB\_Clicked}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{RightB\_Clicked}{RightB\_Clicked}}
+{\footnotesize\ttfamily void Main\+Window\+::\+Right\+B\+\_\+\+Clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Funkcja, wykonująca się podczas naciśnięcia przycisku. Powoduje wysłanie do robota sygnału, powodującego skręt w prawo. \mbox{\Hypertarget{classMainWindow_a2d4c336260671a8660b96b6064563217}\label{classMainWindow_a2d4c336260671a8660b96b6064563217}} 
+\index{MainWindow@{MainWindow}!RightB\_Released@{RightB\_Released}}
+\index{RightB\_Released@{RightB\_Released}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{RightB\_Released}{RightB\_Released}}
+{\footnotesize\ttfamily void Main\+Window\+::\+Right\+B\+\_\+\+Released (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Funkcja, wykonująca się podczas puszczenia przycisku. Powoduje zakończenie ruchu (zatrzymuje robota). \mbox{\Hypertarget{classMainWindow_a43d921e84af57548a4782dc13091d25a}\label{classMainWindow_a43d921e84af57548a4782dc13091d25a}} 
+\index{MainWindow@{MainWindow}!setArrows@{setArrows}}
+\index{setArrows@{setArrows}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{setArrows}{setArrows}}
+{\footnotesize\ttfamily void Main\+Window\+::set\+Arrows (\begin{DoxyParamCaption}\item[{double}]{pwm\+\_\+left,  }\item[{double}]{pwm\+\_\+right,  }\item[{bool}]{dir\+\_\+left,  }\item[{bool}]{dir\+\_\+right }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Funkcja przedstawiająca wizualnie kierunek i prędkość kół za pomocą strzałek, zmieniających swój rozmiar. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pwm\+\_\+left} & -\/ zmienna przechowująca informacje o wypełnieniu P\+WM lewego silnika. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pwm\+\_\+right} & -\/ zmienna przechowująca informacje o wypełnieniu P\+WM prawego silnika. \\
+\hline
+\mbox{\texttt{ in}}  & {\em dir\+\_\+left} & -\/ zmienna przechowująca informacje o kierunku lewego silnika. \\
+\hline
+\mbox{\texttt{ in}}  & {\em dir\+\_\+right} & -\/ zmienna przechowująca informacje o kierunku prawego silnika. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classMainWindow_a2e584b98c44a3491be46eb7f157de547}\label{classMainWindow_a2e584b98c44a3491be46eb7f157de547}} 
+\index{MainWindow@{MainWindow}!setBackground@{setBackground}}
+\index{setBackground@{setBackground}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{setBackground}{setBackground}}
+{\footnotesize\ttfamily void Main\+Window\+::set\+Background (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Funkcja konfigurująca wygląd tła aplikacji. \mbox{\Hypertarget{classMainWindow_a5222646e2d14fd3d3676281a6e4693ea}\label{classMainWindow_a5222646e2d14fd3d3676281a6e4693ea}} 
+\index{MainWindow@{MainWindow}!setBattery@{setBattery}}
+\index{setBattery@{setBattery}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{setBattery}{setBattery}}
+{\footnotesize\ttfamily void Main\+Window\+::set\+Battery (\begin{DoxyParamCaption}\item[{double $\ast$}]{battery\+\_\+state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Funkcja przedstawiająca wizualnie stan naładowania akumulatora. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in,out}}  & {\em battery\+\_\+state} & -\/ przetrzymuje informacje o aktualnym stanie baterii. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classMainWindow_a331d3e6dad11c24f1e8b786e4ffc3924}\label{classMainWindow_a331d3e6dad11c24f1e8b786e4ffc3924}} 
+\index{MainWindow@{MainWindow}!setButtons@{setButtons}}
+\index{setButtons@{setButtons}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{setButtons}{setButtons}}
+{\footnotesize\ttfamily void Main\+Window\+::set\+Buttons (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Funkcja wyświetlająca dane dot. silników w tabelii. \mbox{\Hypertarget{classMainWindow_addc9d7d048db6c28978c085b949cd775}\label{classMainWindow_addc9d7d048db6c28978c085b949cd775}} 
+\index{MainWindow@{MainWindow}!setLabels@{setLabels}}
+\index{setLabels@{setLabels}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{setLabels}{setLabels}}
+{\footnotesize\ttfamily void Main\+Window\+::set\+Labels (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Funkcja konfigurująca wygląd tabel itp (np. ustawienie poziomu przezroczystości). \mbox{\Hypertarget{classMainWindow_a2c31517c9b582a4dc714077df64a5d18}\label{classMainWindow_a2c31517c9b582a4dc714077df64a5d18}} 
+\index{MainWindow@{MainWindow}!setMotor\_data\_label@{setMotor\_data\_label}}
+\index{setMotor\_data\_label@{setMotor\_data\_label}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{setMotor\_data\_label}{setMotor\_data\_label}}
+{\footnotesize\ttfamily void Main\+Window\+::set\+Motor\+\_\+data\+\_\+label (\begin{DoxyParamCaption}\item[{int}]{dir1,  }\item[{int}]{pwm1,  }\item[{int}]{dir2,  }\item[{int}]{pwm2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Funkcja wyświetlająca dane dot. silników w tabelii. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em dir1} & -\/ kierunek obrotu pierwszego silnika. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pwm1} & -\/ wypełnienie P\+WM dla pierwszego silnika. \\
+\hline
+\mbox{\texttt{ in}}  & {\em dir2} & -\/ kierunek obrotu drugiego silnika. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pwm2} & -\/ wypełnienie P\+WM dla drugiego silnika. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classMainWindow_a3088e1526357dc1b6bcac3d11bf83f18}\label{classMainWindow_a3088e1526357dc1b6bcac3d11bf83f18}} 
+\index{MainWindow@{MainWindow}!setSensor\_data\_label@{setSensor\_data\_label}}
+\index{setSensor\_data\_label@{setSensor\_data\_label}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{setSensor\_data\_label}{setSensor\_data\_label}}
+{\footnotesize\ttfamily void Main\+Window\+::set\+Sensor\+\_\+data\+\_\+label (\begin{DoxyParamCaption}\item[{int}]{c1,  }\item[{int}]{c2,  }\item[{int}]{c3,  }\item[{int}]{c4,  }\item[{int}]{c5,  }\item[{int}]{c6 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Funkcja wyświetlająca dane czujnikowe w tabelii. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em c1} & -\/ wartość odczytana z czujnika 1. \\
+\hline
+\mbox{\texttt{ in}}  & {\em c2} & -\/ wartość odczytana z czujnika 2. \\
+\hline
+\mbox{\texttt{ in}}  & {\em c3} & -\/ wartość odczytana z czujnika 3. \\
+\hline
+\mbox{\texttt{ in}}  & {\em c4} & -\/ wartość odczytana z czujnika 4. \\
+\hline
+\mbox{\texttt{ in}}  & {\em c5} & -\/ wartość odczytana z czujnika 5. \\
+\hline
+\mbox{\texttt{ in}}  & {\em c6} & -\/ wartość odczytana z czujnika 6. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classMainWindow_a055f2924e36f56ef13311d391cc0c87e}\label{classMainWindow_a055f2924e36f56ef13311d391cc0c87e}} 
+\index{MainWindow@{MainWindow}!UpB\_Clicked@{UpB\_Clicked}}
+\index{UpB\_Clicked@{UpB\_Clicked}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{UpB\_Clicked}{UpB\_Clicked}}
+{\footnotesize\ttfamily void Main\+Window\+::\+Up\+B\+\_\+\+Clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Funkcja, wykonująca się podczas naciśnięcia przycisku. Powoduje wysłanie do robota sygnału, powodującego jazdę do przodu. \mbox{\Hypertarget{classMainWindow_ac0a3f2d4f58312212f90eecb21dd50a6}\label{classMainWindow_ac0a3f2d4f58312212f90eecb21dd50a6}} 
+\index{MainWindow@{MainWindow}!UpB\_Released@{UpB\_Released}}
+\index{UpB\_Released@{UpB\_Released}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{UpB\_Released}{UpB\_Released}}
+{\footnotesize\ttfamily void Main\+Window\+::\+Up\+B\+\_\+\+Released (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Funkcja, wykonująca się podczas puszczenia przycisku. Powoduje zakończenie ruchu (zatrzymuje robota). 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+mainwindow.\+h\end{DoxyCompactItemize}

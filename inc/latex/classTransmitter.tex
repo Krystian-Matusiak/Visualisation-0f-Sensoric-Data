@@ -1,0 +1,65 @@
+\hypertarget{classTransmitter}{}\doxysection{Transmitter Class Reference}
+\label{classTransmitter}\index{Transmitter@{Transmitter}}
+
+
+Klasa odpowiadająca za nadawanie danych do innego urządzenia.  
+
+
+
+
+{\ttfamily \#include $<$Transmitter.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classTransmitter_ae8b1576437624b364a04628db03dd720}{Nadaj}} (int Sk2\+Client, char D\+A\+NA\mbox{[}100\mbox{]})
+\item 
+int \mbox{\hyperlink{classTransmitter_a028ede96122223c70868cfeb3933660c}{Socket\+Config}} (int Port)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classTransmitter_a9fe5bff0751ed020fe75089a09525c07}{tab\+\_\+danych}} \mbox{[}6\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa odpowiadająca za nadawanie danych do innego urządzenia. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classTransmitter_ae8b1576437624b364a04628db03dd720}\label{classTransmitter_ae8b1576437624b364a04628db03dd720}} 
+\index{Transmitter@{Transmitter}!Nadaj@{Nadaj}}
+\index{Nadaj@{Nadaj}!Transmitter@{Transmitter}}
+\doxysubsubsection{\texorpdfstring{Nadaj()}{Nadaj()}}
+{\footnotesize\ttfamily int Transmitter\+::\+Nadaj (\begin{DoxyParamCaption}\item[{int}]{Sk2\+Client,  }\item[{char}]{D\+A\+NA\mbox{[}100\mbox{]} }\end{DoxyParamCaption})}
+
+Funkcja odpowiadająca za nadawanie danych poprzez socket. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em Gn\+Odbioru} & -\/ deskryptor gniazda. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classTransmitter_a028ede96122223c70868cfeb3933660c}\label{classTransmitter_a028ede96122223c70868cfeb3933660c}} 
+\index{Transmitter@{Transmitter}!SocketConfig@{SocketConfig}}
+\index{SocketConfig@{SocketConfig}!Transmitter@{Transmitter}}
+\doxysubsubsection{\texorpdfstring{SocketConfig()}{SocketConfig()}}
+{\footnotesize\ttfamily int Transmitter\+::\+Socket\+Config (\begin{DoxyParamCaption}\item[{int}]{Port }\end{DoxyParamCaption})}
+
+Funkcja aktywująca stan \char`\"{}nasłuchiwania\char`\"{}. Gdy dane się pojawią, aktywowana jest funkcja Odbierz, aby przyjąć dane. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em Port} & -\/ zmienna, która odnosi się do otworzonego portu komunikacyjnego. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classTransmitter_a9fe5bff0751ed020fe75089a09525c07}\label{classTransmitter_a9fe5bff0751ed020fe75089a09525c07}} 
+\index{Transmitter@{Transmitter}!tab\_danych@{tab\_danych}}
+\index{tab\_danych@{tab\_danych}!Transmitter@{Transmitter}}
+\doxysubsubsection{\texorpdfstring{tab\_danych}{tab\_danych}}
+{\footnotesize\ttfamily int Transmitter\+::tab\+\_\+danych\mbox{[}6\mbox{]}}
+
+Zmienna, przechowująca kolejno\+: P\+WM pierszego silnika, kierunek pierwszego silnika, P\+WM drugiego silnika, kierunek drugiego silnika oraz tryb ruchu (1-\/tryb ręczny, 0-\/tryb automatyczny) 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Transmitter.\+h\end{DoxyCompactItemize}

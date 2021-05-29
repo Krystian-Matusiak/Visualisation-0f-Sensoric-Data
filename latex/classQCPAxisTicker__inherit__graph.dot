@@ -1,0 +1,20 @@
+digraph "QCPAxisTicker"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="QCPAxisTicker",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="The base class tick generator used by QCPAxis to create tick positions and tick labels."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="QCPAxisTickerDateTime",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classQCPAxisTickerDateTime.html",tooltip="Specialized axis ticker for calendar dates and times as axis ticks."];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="QCPAxisTickerFixed",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classQCPAxisTickerFixed.html",tooltip="Specialized axis ticker with a fixed tick step."];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="QCPAxisTickerLog",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classQCPAxisTickerLog.html",tooltip="Specialized axis ticker suited for logarithmic axes."];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="QCPAxisTickerPi",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classQCPAxisTickerPi.html",tooltip="Specialized axis ticker to display ticks in units of an arbitrary constant, for example pi."];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="QCPAxisTickerText",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classQCPAxisTickerText.html",tooltip="Specialized axis ticker which allows arbitrary labels at specified coordinates."];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="QCPAxisTickerTime",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classQCPAxisTickerTime.html",tooltip="Specialized axis ticker for time spans in units of milliseconds to days."];
+}

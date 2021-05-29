@@ -1,0 +1,32 @@
+digraph "QCPPlottableInterface1D"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="QCPPlottableInterface1D",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Defines an abstract interface for one-dimensional plottables."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="QCPAbstractPlottable1D\l\< DataType \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classQCPAbstractPlottable1D.html",tooltip="A template base class for plottables with one-dimensional data."];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="QCPAbstractPlottable1D\l\< QCPBarsData \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classQCPAbstractPlottable1D.html",tooltip=" "];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="QCPBars",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classQCPBars.html",tooltip="A plottable representing a bar chart in a plot."];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="QCPAbstractPlottable1D\l\< QCPCurveData \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classQCPAbstractPlottable1D.html",tooltip=" "];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="QCPCurve",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classQCPCurve.html",tooltip="A plottable representing a parametric curve in a plot."];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="QCPAbstractPlottable1D\l\< QCPFinancialData \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classQCPAbstractPlottable1D.html",tooltip=" "];
+  Node7 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="QCPFinancial",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classQCPFinancial.html",tooltip="A plottable representing a financial stock chart."];
+  Node1 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="QCPAbstractPlottable1D\l\< QCPGraphData \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classQCPAbstractPlottable1D.html",tooltip=" "];
+  Node9 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node10 [label="QCPGraph",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classQCPGraph.html",tooltip="A plottable representing a graph in a plot."];
+  Node1 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node11 [label="QCPAbstractPlottable1D\l\< QCPStatisticalBoxData \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classQCPAbstractPlottable1D.html",tooltip=" "];
+  Node11 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node12 [label="QCPStatisticalBox",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classQCPStatisticalBox.html",tooltip="A plottable representing a single statistical box in a plot."];
+  Node1 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node13 [label="QCPErrorBars",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classQCPErrorBars.html",tooltip="A plottable that adds a set of error bars to other plottables."];
+}
