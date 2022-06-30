@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['info1_13',['info1',['../classReceiver.html#a9f44c5eeba75aac043527b352da16b90',1,'Receiver']]]
+  ['leftb_5fclicked_13',['LeftB_Clicked',['../classMainWindow.html#a29f3c712827e6090aba691dc7226e17d',1,'MainWindow']]],
+  ['leftb_5freleased_14',['LeftB_Released',['../classMainWindow.html#aec2091baa23f8cd374f97eab42b80a1f',1,'MainWindow']]]
 ];

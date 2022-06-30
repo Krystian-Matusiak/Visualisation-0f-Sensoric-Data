@@ -16,16 +16,16 @@ void \mbox{\hyperlink{classDaneSilnikowe_abc668dc66fe650b2eba6db6177448785}{set\
 \item 
 void \mbox{\hyperlink{classDaneSilnikowe_a536b6fb10eeb373027631d6caf7cc843}{set\+P\+W\+M2}} (char parse\+\_\+pwm2\mbox{[}3\mbox{]})
 \item 
-void \mbox{\hyperlink{classDaneSilnikowe_aae3332fecafb025921b62140fce28054}{new\+PlotY}} (double $\ast$new\+\_\+val)
+void \mbox{\hyperlink{classDaneSilnikowe_a9c5ed82eee79a91c0ad98a50758b42c1}{new\+PlotY}} (double new\+\_\+val)
 \item 
-void \mbox{\hyperlink{classDaneSilnikowe_ac1f6a32995e8713758e905de2bfd8447}{new\+PlotZ}} (double $\ast$new\+\_\+val)
+void \mbox{\hyperlink{classDaneSilnikowe_acbf7ab82628d58157822afe5a9f6b9ab}{new\+PlotZ}} (double new\+\_\+val)
 \end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-double $\ast$ \mbox{\hyperlink{classDaneSilnikowe_ab7ee48f2e2ba76c556227fd4c15301fe}{pwm1}} =new double
+double \mbox{\hyperlink{classDaneSilnikowe_ac702f3eff2f0e14b7d59796377f8e7f6}{pwm1}}
 \item 
-double $\ast$ \mbox{\hyperlink{classDaneSilnikowe_ac9c77ed7001eaf7344628d9bf9c848d1}{pwm2}} =new double
+double \mbox{\hyperlink{classDaneSilnikowe_a4e11538eb2931ee9f611a5446411e9f7}{pwm2}}
 \item 
 bool \mbox{\hyperlink{classDaneSilnikowe_acc6d8a6d48b6a806bf286a5efd4e19b7}{dir\+\_\+motor1}} =false
 \item 
@@ -41,22 +41,22 @@ double \mbox{\hyperlink{classDaneSilnikowe_a1f644f8100bfdf01abff3fff89c79a9c}{pl
 Klasa przechowująca dane dotyczące silników. 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classDaneSilnikowe_aae3332fecafb025921b62140fce28054}\label{classDaneSilnikowe_aae3332fecafb025921b62140fce28054}} 
+\mbox{\Hypertarget{classDaneSilnikowe_a9c5ed82eee79a91c0ad98a50758b42c1}\label{classDaneSilnikowe_a9c5ed82eee79a91c0ad98a50758b42c1}} 
 \index{DaneSilnikowe@{DaneSilnikowe}!newPlotY@{newPlotY}}
 \index{newPlotY@{newPlotY}!DaneSilnikowe@{DaneSilnikowe}}
 \doxysubsubsection{\texorpdfstring{newPlotY()}{newPlotY()}}
-{\footnotesize\ttfamily void Dane\+Silnikowe\+::new\+PlotY (\begin{DoxyParamCaption}\item[{double $\ast$}]{new\+\_\+val }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Dane\+Silnikowe\+::new\+PlotY (\begin{DoxyParamCaption}\item[{double}]{new\+\_\+val }\end{DoxyParamCaption})}
 
 Funkcja przetrzymująca i aktualizująca tablicę danych z wypełnieniem sygnału P\+WM silnika lewego. Następnie tablica wykorzystywana jest do wygenerowania wykresu, poprzez dopisywanie nowej wartości na koniec tablicy i usuwanie pierwszej wartości. 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\texttt{ in}}  & {\em new\+\_\+val} & -\/ wartość, która będzie wpisywana na koniec tablicy. \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{classDaneSilnikowe_ac1f6a32995e8713758e905de2bfd8447}\label{classDaneSilnikowe_ac1f6a32995e8713758e905de2bfd8447}} 
+\mbox{\Hypertarget{classDaneSilnikowe_acbf7ab82628d58157822afe5a9f6b9ab}\label{classDaneSilnikowe_acbf7ab82628d58157822afe5a9f6b9ab}} 
 \index{DaneSilnikowe@{DaneSilnikowe}!newPlotZ@{newPlotZ}}
 \index{newPlotZ@{newPlotZ}!DaneSilnikowe@{DaneSilnikowe}}
 \doxysubsubsection{\texorpdfstring{newPlotZ()}{newPlotZ()}}
-{\footnotesize\ttfamily void Dane\+Silnikowe\+::new\+PlotZ (\begin{DoxyParamCaption}\item[{double $\ast$}]{new\+\_\+val }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Dane\+Silnikowe\+::new\+PlotZ (\begin{DoxyParamCaption}\item[{double}]{new\+\_\+val }\end{DoxyParamCaption})}
 
 Funkcja przetrzymująca i aktualizująca tablicę danych z wypełnieniem sygnału P\+WM silnika prawego. Następnie tablica wykorzystywana jest do wygenerowania wykresu, poprzez dopisywanie nowej wartości na koniec tablicy i usuwanie pierwszej wartości. 
 \begin{DoxyParams}[1]{Parameters}
@@ -112,17 +112,17 @@ Zbiór wartości dla wykresów P\+WM pierwszego silnika \mbox{\Hypertarget{class
 \doxysubsubsection{\texorpdfstring{plotZ}{plotZ}}
 {\footnotesize\ttfamily double Dane\+Silnikowe\+::plotZ\mbox{[}sample\mbox{]}}
 
-Zbiór wartości dla wykresów P\+WM pierwszego silnika \mbox{\Hypertarget{classDaneSilnikowe_ab7ee48f2e2ba76c556227fd4c15301fe}\label{classDaneSilnikowe_ab7ee48f2e2ba76c556227fd4c15301fe}} 
+Zbiór wartości dla wykresów P\+WM pierwszego silnika \mbox{\Hypertarget{classDaneSilnikowe_ac702f3eff2f0e14b7d59796377f8e7f6}\label{classDaneSilnikowe_ac702f3eff2f0e14b7d59796377f8e7f6}} 
 \index{DaneSilnikowe@{DaneSilnikowe}!pwm1@{pwm1}}
 \index{pwm1@{pwm1}!DaneSilnikowe@{DaneSilnikowe}}
 \doxysubsubsection{\texorpdfstring{pwm1}{pwm1}}
-{\footnotesize\ttfamily double$\ast$ Dane\+Silnikowe\+::pwm1 =new double}
+{\footnotesize\ttfamily double Dane\+Silnikowe\+::pwm1}
 
-Wielkość, określają stan wypełnienia sygnału P\+WM (pulse width modulation) w procentach \mbox{[}\%\mbox{]} \mbox{\Hypertarget{classDaneSilnikowe_ac9c77ed7001eaf7344628d9bf9c848d1}\label{classDaneSilnikowe_ac9c77ed7001eaf7344628d9bf9c848d1}} 
+Wielkość, określają stan wypełnienia sygnału P\+WM (pulse width modulation) w procentach \mbox{[}\%\mbox{]} \mbox{\Hypertarget{classDaneSilnikowe_a4e11538eb2931ee9f611a5446411e9f7}\label{classDaneSilnikowe_a4e11538eb2931ee9f611a5446411e9f7}} 
 \index{DaneSilnikowe@{DaneSilnikowe}!pwm2@{pwm2}}
 \index{pwm2@{pwm2}!DaneSilnikowe@{DaneSilnikowe}}
 \doxysubsubsection{\texorpdfstring{pwm2}{pwm2}}
-{\footnotesize\ttfamily double$\ast$ Dane\+Silnikowe\+::pwm2 =new double}
+{\footnotesize\ttfamily double Dane\+Silnikowe\+::pwm2}
 
 Wielkość, określają stan wypełnienia sygnału P\+WM (pulse width modulation) w procentach \mbox{[}\%\mbox{]} 
 

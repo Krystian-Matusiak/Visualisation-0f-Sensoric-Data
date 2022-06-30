@@ -11,36 +11,36 @@ int Receiver::Odbierz(int GnOdbioru){
    while ( IZ = read(GnOdbioru,DANA, ROZM*sizeof(char) ) > 0 ){
 
        for(int i=0 ; i<3 ; i++){
-        info1[0][i]=DANA[i];
-        info1[1][i]=DANA[i+3];
-        info1[2][i]=DANA[i+6];
-        info1[3][i]=DANA[i+9];
-        info1[4][i]=DANA[i+12];
-        info1[5][i]=DANA[i+15];
+        paczka_danych[0][i]=DANA[i];
+        paczka_danych[1][i]=DANA[i+3];
+        paczka_danych[2][i]=DANA[i+6];
+        paczka_danych[3][i]=DANA[i+9];
+        paczka_danych[4][i]=DANA[i+12];
+        paczka_danych[5][i]=DANA[i+15];
       }
 
        // Przyjmowanie danych PWM1 i PWM2
       for( int i=0 ; i<3 ; i++ ){
-          info1[6][i]=DANA[i+18];
-          info1[8][i]=DANA[i+22];
+          paczka_danych[6][i]=DANA[i+18];
+          paczka_danych[8][i]=DANA[i+22];
       }
 
       // Przyjmowanie danych DIR1 i DIR2
-      info1[7][0]=DANA[21];
-      info1[9][0]=DANA[25];
+      paczka_danych[7][0]=DANA[21];
+      paczka_danych[9][0]=DANA[25];
 
       // Przyjmowanie danej BATT
       for(int i=0 ; i<4 ; i++)
-        info1[10][i]=DANA[i+26];
+        paczka_danych[10][i]=DANA[i+26];
 
-      DSilniki->setPWM1(info1[6]);
-      DSilniki->setPWM2(info1[8]);
+      DSilniki.setPWM1(paczka_danych[6]);
+      DSilniki.setPWM2(paczka_danych[8]);
 
-      DSilniki->dir_motor1 = info1[7][0]-48;
-      DSilniki->dir_motor2 = info1[9][0]-48;
+      DSilniki.dir_motor1 = paczka_danych[7][0]-48;
+      DSilniki.dir_motor2 = paczka_danych[9][0]-48;
 
-      DSens->setSensors(info1);
-      DSens->setBatt(info1[10]);
+      DSens.setSensors(paczka_danych);
+      DSens.setBatt(paczka_danych[10]);
 
    }
 

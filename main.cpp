@@ -40,7 +40,7 @@ int main(int argc, char *argv[]){
 
 
     QApplication App (argc, argv);
-    MainWindow *Wind = new MainWindow(receive->DSens,receive->DSilniki, transmit);
+    MainWindow *Wind = new MainWindow(&(receive->DSens),&(receive->DSilniki), transmit);
 
     Wind->show();
     Wind->setBackground();
@@ -53,6 +53,7 @@ int main(int argc, char *argv[]){
     pthread_join      (Watek_odbiornika,NULL);
     pthread_join      (Watek_nadajnika,NULL);
 
-
+    delete receive;
+    delete transmit;
     return end;
 }

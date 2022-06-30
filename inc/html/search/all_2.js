@@ -7,6 +7,6 @@ var searchData=
   ['dir_5fmotor2_7',['dir_motor2',['../classDaneSilnikowe.html#a7d6777af1f329c17ff3c4b427312847e',1,'DaneSilnikowe']]],
   ['downb_5fclicked_8',['DownB_Clicked',['../classMainWindow.html#aeb5b06fd941816a959f62f78432a0010',1,'MainWindow']]],
   ['downb_5freleased_9',['DownB_Released',['../classMainWindow.html#a7f58b6e9669c1d03611037574ae59e84',1,'MainWindow']]],
-  ['dsens_10',['DSens',['../classReceiver.html#a910465f03076e62db3b71a99caba374a',1,'Receiver']]],
-  ['dsilniki_11',['DSilniki',['../classReceiver.html#ab35b818abe15b20de5eaa664bc42878f',1,'Receiver']]]
+  ['dsens_10',['DSens',['../classReceiver.html#a57d14e81e4d4fa84cfebb4a5fdb0b58a',1,'Receiver']]],
+  ['dsilniki_11',['DSilniki',['../classReceiver.html#a872324d57b283538c05a48b8f3ea0875',1,'Receiver']]]
 ];

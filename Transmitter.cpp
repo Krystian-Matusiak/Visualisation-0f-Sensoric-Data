@@ -25,7 +25,7 @@ int Transmitter::SocketConfig(int Port){
 
     bzero((char *)&DaneAdSerw,sizeof(DaneAdSerw));
     DaneAdSerw.sin_family = AF_INET;
-    DaneAdSerw.sin_addr.s_addr = inet_addr("192.168.8.104");
+    DaneAdSerw.sin_addr.s_addr = inet_addr("192.168.8.102");
     //DaneAdSerw.sin_addr.s_addr = inet_addr("10.11.14.136");
     DaneAdSerw.sin_port = htons(Port);
 

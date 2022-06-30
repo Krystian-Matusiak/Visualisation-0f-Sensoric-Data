@@ -25,11 +25,11 @@ int \mbox{\hyperlink{classReceiver_a02b3c6e2005ad7457fcda444f276da12}{Uruchom\+S
 \item 
 char \mbox{\hyperlink{classReceiver_a4851a22355bf3243488685cec8f55092}{D\+A\+NA}} \mbox{[}R\+O\+ZM\mbox{]}
 \item 
-char \mbox{\hyperlink{classReceiver_a9f44c5eeba75aac043527b352da16b90}{info1}} \mbox{[}11\mbox{]}\mbox{[}R\+O\+ZM\mbox{]}
+char \mbox{\hyperlink{classReceiver_a9eb59a6c44955e36fe36fc9393bff1b6}{paczka\+\_\+danych}} \mbox{[}11\mbox{]}\mbox{[}R\+O\+ZM\mbox{]}
 \item 
-\mbox{\hyperlink{classDaneSensoryczne}{Dane\+Sensoryczne}} $\ast$ \mbox{\hyperlink{classReceiver_a910465f03076e62db3b71a99caba374a}{D\+Sens}} = new \mbox{\hyperlink{classDaneSensoryczne}{Dane\+Sensoryczne}}
+\mbox{\hyperlink{classDaneSensoryczne}{Dane\+Sensoryczne}} \mbox{\hyperlink{classReceiver_a57d14e81e4d4fa84cfebb4a5fdb0b58a}{D\+Sens}}
 \item 
-\mbox{\hyperlink{classDaneSilnikowe}{Dane\+Silnikowe}} $\ast$ \mbox{\hyperlink{classReceiver_ab35b818abe15b20de5eaa664bc42878f}{D\+Silniki}} = new \mbox{\hyperlink{classDaneSilnikowe}{Dane\+Silnikowe}}
+\mbox{\hyperlink{classDaneSilnikowe}{Dane\+Silnikowe}} \mbox{\hyperlink{classReceiver_a872324d57b283538c05a48b8f3ea0875}{D\+Silniki}}
 \end{DoxyCompactItemize}
 
 
@@ -68,23 +68,23 @@ Funkcja aktywująca stan \char`\"{}nasłuchiwania\char`\"{}. Gdy dane się pojaw
 \doxysubsubsection{\texorpdfstring{DANA}{DANA}}
 {\footnotesize\ttfamily char Receiver\+::\+D\+A\+NA\mbox{[}R\+O\+ZM\mbox{]}}
 
-Zmienna, do której przekazywany będzie ciąg znaków, przesyłany przez socket\textquotesingle{}y. \mbox{\Hypertarget{classReceiver_a910465f03076e62db3b71a99caba374a}\label{classReceiver_a910465f03076e62db3b71a99caba374a}} 
+Zmienna, do której przekazywany będzie ciąg znaków, przesyłany przez socket\textquotesingle{}y. \mbox{\Hypertarget{classReceiver_a57d14e81e4d4fa84cfebb4a5fdb0b58a}\label{classReceiver_a57d14e81e4d4fa84cfebb4a5fdb0b58a}} 
 \index{Receiver@{Receiver}!DSens@{DSens}}
 \index{DSens@{DSens}!Receiver@{Receiver}}
 \doxysubsubsection{\texorpdfstring{DSens}{DSens}}
-{\footnotesize\ttfamily \mbox{\hyperlink{classDaneSensoryczne}{Dane\+Sensoryczne}}$\ast$ Receiver\+::\+D\+Sens = new \mbox{\hyperlink{classDaneSensoryczne}{Dane\+Sensoryczne}}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classDaneSensoryczne}{Dane\+Sensoryczne}} Receiver\+::\+D\+Sens}
 
-Klasa, do której zapisywane będą dane sensoryczne, otrzymane z komunikacji \mbox{\Hypertarget{classReceiver_ab35b818abe15b20de5eaa664bc42878f}\label{classReceiver_ab35b818abe15b20de5eaa664bc42878f}} 
+Klasa, do której zapisywane będą dane sensoryczne, otrzymane z komunikacji \mbox{\Hypertarget{classReceiver_a872324d57b283538c05a48b8f3ea0875}\label{classReceiver_a872324d57b283538c05a48b8f3ea0875}} 
 \index{Receiver@{Receiver}!DSilniki@{DSilniki}}
 \index{DSilniki@{DSilniki}!Receiver@{Receiver}}
 \doxysubsubsection{\texorpdfstring{DSilniki}{DSilniki}}
-{\footnotesize\ttfamily \mbox{\hyperlink{classDaneSilnikowe}{Dane\+Silnikowe}}$\ast$ Receiver\+::\+D\+Silniki = new \mbox{\hyperlink{classDaneSilnikowe}{Dane\+Silnikowe}}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classDaneSilnikowe}{Dane\+Silnikowe}} Receiver\+::\+D\+Silniki}
 
-Klasa, do której zapisywane będą dane silnikowe, otrzymane z komunikacji \mbox{\Hypertarget{classReceiver_a9f44c5eeba75aac043527b352da16b90}\label{classReceiver_a9f44c5eeba75aac043527b352da16b90}} 
-\index{Receiver@{Receiver}!info1@{info1}}
-\index{info1@{info1}!Receiver@{Receiver}}
-\doxysubsubsection{\texorpdfstring{info1}{info1}}
-{\footnotesize\ttfamily char Receiver\+::info1\mbox{[}11\mbox{]}\mbox{[}R\+O\+ZM\mbox{]}}
+Klasa, do której zapisywane będą dane silnikowe, otrzymane z komunikacji \mbox{\Hypertarget{classReceiver_a9eb59a6c44955e36fe36fc9393bff1b6}\label{classReceiver_a9eb59a6c44955e36fe36fc9393bff1b6}} 
+\index{Receiver@{Receiver}!paczka\_danych@{paczka\_danych}}
+\index{paczka\_danych@{paczka\_danych}!Receiver@{Receiver}}
+\doxysubsubsection{\texorpdfstring{paczka\_danych}{paczka\_danych}}
+{\footnotesize\ttfamily char Receiver\+::paczka\+\_\+danych\mbox{[}11\mbox{]}\mbox{[}R\+O\+ZM\mbox{]}}
 
 Zmienna, które przechowują 6 danych czujnikowych, wypełnienie sygnału P\+WM dla każdego z dwóch silników, kierunek obrotu tych silników oraz stopień naładowania akumulatora. 
 

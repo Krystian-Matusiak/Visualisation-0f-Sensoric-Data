@@ -74,7 +74,7 @@ public slots:
     /*! Funkcja przedstawiająca wizualnie stan naładowania akumulatora.
         \param[in,out] battery_state - przetrzymuje informacje o aktualnym stanie baterii.
      */
-    void setBattery(double *battery_state);
+    void setBattery(double battery_state);
 
 
     /*! Funkcja, wykonująca się podczas naciśnięcia przycisku. Powoduje wysłanie do robota sygnału, powodującego skręt w prawo. */

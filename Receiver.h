@@ -40,13 +40,13 @@ public:
     char DANA[ROZM];
 
     /*! Zmienna, które przechowują 6 danych czujnikowych, wypełnienie sygnału PWM dla każdego z dwóch silników, kierunek obrotu tych silników oraz stopień naładowania akumulatora. */
-    char info1[11][ROZM];
+    char paczka_danych[11][ROZM];
 
     /*! Klasa, do której zapisywane będą dane sensoryczne, otrzymane z komunikacji */
-    DaneSensoryczne *DSens = new DaneSensoryczne;
+    DaneSensoryczne DSens;
 
     /*! Klasa, do której zapisywane będą dane silnikowe, otrzymane z komunikacji */
-    DaneSilnikowe *DSilniki = new DaneSilnikowe;
+    DaneSilnikowe DSilniki;
 
 };
 

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['batt_77',['batt',['../classDaneSensoryczne.html#a4481385a5e3addf8ea74bc2853ffca7d',1,'DaneSensoryczne']]]
+  ['batt_77',['batt',['../classDaneSensoryczne.html#a9d0c940f4f984a6d6854da5556a817c0',1,'DaneSensoryczne']]]
 ];

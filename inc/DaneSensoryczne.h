@@ -33,13 +33,12 @@ class DaneSensoryczne{
         void setBatt(char parse_batt[4]);
 
 
-        char info1[11][ROZM];
 
         /*! Wartości wszystkich czujników odbiciowych */
         double CzujnikiOdb[6];
 
         /*! Zmienna, przechowująca dane o poziomie naładowania baterii */
-        double *batt = new double;
+        double batt ;
 };
 
 #endif // DANESENSORYCZNE_H

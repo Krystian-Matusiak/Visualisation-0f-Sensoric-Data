@@ -3,7 +3,7 @@ var searchData=
   ['setarrows_62',['setArrows',['../classMainWindow.html#a43d921e84af57548a4782dc13091d25a',1,'MainWindow']]],
   ['setbackground_63',['setBackground',['../classMainWindow.html#a2e584b98c44a3491be46eb7f157de547',1,'MainWindow']]],
   ['setbatt_64',['setBatt',['../classDaneSensoryczne.html#a61cef17f62e0502a8fe7d06b3c4bedcd',1,'DaneSensoryczne']]],
-  ['setbattery_65',['setBattery',['../classMainWindow.html#a5222646e2d14fd3d3676281a6e4693ea',1,'MainWindow']]],
+  ['setbattery_65',['setBattery',['../classMainWindow.html#a768d65a8b796be024da5e3ac524c839d',1,'MainWindow']]],
   ['setbuttons_66',['setButtons',['../classMainWindow.html#a331d3e6dad11c24f1e8b786e4ffc3924',1,'MainWindow']]],
   ['setlabels_67',['setLabels',['../classMainWindow.html#addc9d7d048db6c28978c085b949cd775',1,'MainWindow']]],
   ['setmotor_5fdata_5flabel_68',['setMotor_data_label',['../classMainWindow.html#a2c31517c9b582a4dc714077df64a5d18',1,'MainWindow']]],

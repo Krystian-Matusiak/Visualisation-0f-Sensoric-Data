@@ -17,5 +17,5 @@ void DaneSensoryczne::setSensors(char parse_sensors[11][ROZM]){
 
 
 void DaneSensoryczne::setBatt(char parse_batt[4]){
-   *batt = strtod( parse_batt , NULL );
+   batt = strtod( parse_batt , NULL );
 };

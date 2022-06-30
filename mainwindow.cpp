@@ -19,11 +19,11 @@ void MainWindow::GdySekunda(){
 
 
 
-  ui->PWM_lewo_val->setText(QString::number(*DaneSil->pwm1));
+  ui->PWM_lewo_val->setText(QString::number(DaneSil->pwm1));
   if(DaneSil->dir_motor1)   ui->Kier_lewo_val->setText("Przod");
   else  ui->Kier_lewo_val->setText("Tył");
 
-  ui->PWM_prawo_val->setText(QString::number(*DaneSil->pwm2));
+  ui->PWM_prawo_val->setText(QString::number(DaneSil->pwm2));
   if(DaneSil->dir_motor2)   ui->Kier_prawo_val->setText("Przod");
   else  ui->Kier_prawo_val->setText("Tył");
 
@@ -48,7 +48,7 @@ void MainWindow::GdySekunda(){
              DaneSen->CzujnikiOdb[5]
           );
   makePlot();
-  setArrows( *DaneSil->pwm1 , *DaneSil->pwm2 , DaneSil->dir_motor1 , DaneSil->dir_motor2 );
+  setArrows( DaneSil->pwm1 , DaneSil->pwm2 , DaneSil->dir_motor1 , DaneSil->dir_motor2 );
   setBattery(DaneSen->batt);
 
 
@@ -117,10 +117,16 @@ void MainWindow::DownB_Released(){
 // ///////////////////////////////////////////////////////////
 
 void MainWindow::ChangeModeB_Clicked(){
-    if( transmitter->tab_danych[5] == 0 )
+    if( transmitter->tab_danych[5] == 0 ){
         transmitter->tab_danych[5]=1;
-    else
+        ui->CHANGE_MODE->setStyleSheet("background-color: red");
+        ui->MODE_TEXT->setText("Tryb automatyczny");
+    }
+    else{
         transmitter->tab_danych[5]=0;
+        ui->CHANGE_MODE->setStyleSheet("background-color: green");
+        ui->MODE_TEXT->setText("Tryb ręczny");
+    }
     cout << transmitter->tab_danych[5] << endl;
 }
 
@@ -132,6 +138,7 @@ MainWindow::MainWindow( DaneSensoryczne *DSENSORYCZNE , DaneSilnikowe *DSILNIKOW
 
     transmitter=transmit;
     transmitter->tab_danych[5]=0;
+    ui->CHANGE_MODE->setStyleSheet("background-color: green");
 
     connect(ui->RIGHT_BUTTON, SIGNAL(pressed()),  this, SLOT(RightB_Clicked()) );
     connect(ui->RIGHT_BUTTON, SIGNAL(released()), this, SLOT(RightB_Released()) );
@@ -190,7 +197,7 @@ void MainWindow::setBackground(){
     int w= ui->centralwidget->width();
     int h= ui->centralwidget->width();
 
-    QImage img("/home/krystianm/CODING/SEMESTR6/WDS/proj1/WDS1/bk2.jpg");
+    QImage img("/home/krystian/CODING/Visualisation-0f-Sensoric-Data/bk2.jpg");
     QImage IMG = img.scaled(w, h, Qt::KeepAspectRatio);
     QPalette palette;
 
@@ -202,12 +209,12 @@ void MainWindow::setBackground(){
 
 void MainWindow::setArrows(double pwm_left ,double pwm_right , bool dir_left , bool dir_right){
 
-    QPixmap LF_pix("/home/krystianm/CODING/SEMESTR6/WDS/proj1/WDS1/lf.png");
-    QPixmap green_pix_left("/home/krystianm/CODING/SEMESTR6/WDS/proj1/WDS1/greenarrow.png");
-    QPixmap green_pix_right("/home/krystianm/CODING/SEMESTR6/WDS/proj1/WDS1/greenarrow.png");
+    QPixmap LF_pix("/home/krystian/CODING/Visualisation-0f-Sensoric-Data/lf.png");
+    QPixmap green_pix_left("/home/krystian/CODING/Visualisation-0f-Sensoric-Data/greenarrow.png");
+    QPixmap green_pix_right("/home/krystian/CODING/Visualisation-0f-Sensoric-Data/greenarrow.png");
 
-    QPixmap red_pix_left("/home/krystianm/CODING/SEMESTR6/WDS/proj1/WDS1/redarrow.png");
-    QPixmap red_pix_right("/home/krystianm/CODING/SEMESTR6/WDS/proj1/WDS1/redarrow.png");
+    QPixmap red_pix_left("./redarrow.png");
+    QPixmap red_pix_right("./redarrow.png");
 
 
     green_pix_left = green_pix_left.scaled(  (ui->LEFT_DOWN->width() * pwm_left)/100,
@@ -260,33 +267,30 @@ void MainWindow::setArrows(double pwm_left ,double pwm_right , bool dir_left , b
 
 }
 
-void MainWindow::setBattery(double *battery_state){
+void MainWindow::setBattery(double battery_state){
 
-    QPixmap batt_25("/home/krystianm/CODING/SEMESTR6/WDS/proj1/WDS1/BAT_25.png");
-    QPixmap batt_50("/home/krystianm/CODING/SEMESTR6/WDS/proj1/WDS1/BAT_50.png");
-    QPixmap batt_75("/home/krystianm/CODING/SEMESTR6/WDS/proj1/WDS1/BAT_75.png");
-    QPixmap batt_100("/home/krystianm/CODING/SEMESTR6/WDS/proj1/WDS1/BAT_100.png");
+    QPixmap batt_25("/home/krystian/CODING/Visualisation-0f-Sensoric-Data/BAT_25.png");
+    QPixmap batt_50("/home/krystian/CODING/Visualisation-0f-Sensoric-Data/BAT_50.png");
+    QPixmap batt_75("/home/krystian/CODING/Visualisation-0f-Sensoric-Data/BAT_75.png");
+    QPixmap batt_100("/home/krystian/CODING/Visualisation-0f-Sensoric-Data/BAT_100.png");
     QPixmap actual_state;
 
-    if( *battery_state <=25)
+    if( battery_state <=25)
         actual_state = batt_25;
-    if( *battery_state <70 && *battery_state>25)
+    if( battery_state <70 && battery_state>25)
         actual_state = batt_50;
-    if( *battery_state <95 && *battery_state>=70)
+    if( battery_state <95 && battery_state>=70)
         actual_state = batt_75;
-    if( *battery_state >=95)
+    if( battery_state >=95)
     //else
         actual_state = batt_100;
 
     actual_state = actual_state.scaled( ui->Battery->width() ,ui->Battery->height(), Qt::IgnoreAspectRatio, Qt::FastTransformation);
     ui->Battery->setPixmap(actual_state);
-    ui->Battery_state->setText( QString::number(*battery_state)+"%" );
+    ui->Battery_state->setText( QString::number(battery_state)+"%" );
 }
 
 void MainWindow::setLabels(){
-    ui->label_12->setStyleSheet("QLabel {border-style: solid; border-width: 1px;border-color: black;}");
-    ui->label_13->setStyleSheet("QLabel {border-style: solid; border-width: 1px;border-color: black;}");
-    ui->label_15->setStyleSheet("QLabel {border-style: solid; border-width: 1px;border-color: black;}");
 
     ui->Frame_Data->setStyleSheet("background-color: rgb(255, 255, 255,170);");
     ui->Frame_Motors->setStyleSheet("background-color: rgb(255, 255, 255,170);");
@@ -295,10 +299,10 @@ void MainWindow::setLabels(){
 }
 
 void MainWindow::setButtons(){
-    QPixmap right("/home/krystianm/CODING/SEMESTR6/WDS/proj1/WDS1/ARROW_RIGHT.png");
-    QPixmap left("/home/krystianm/CODING/SEMESTR6/WDS/proj1/WDS1/ARROW_LEFT.png");
-    QPixmap up("/home/krystianm/CODING/SEMESTR6/WDS/proj1/WDS1/ARROW_UP.png");
-    QPixmap down("/home/krystianm/CODING/SEMESTR6/WDS/proj1/WDS1/ARROW_DOWN.png");
+    QPixmap right("/home/krystian/CODING/Visualisation-0f-Sensoric-Data/ARROW_RIGHT.png");
+    QPixmap left("/home/krystian/CODING/Visualisation-0f-Sensoric-Data/ARROW_LEFT.png");
+    QPixmap up("/home/krystian/CODING/Visualisation-0f-Sensoric-Data/ARROW_UP.png");
+    QPixmap down("/home/krystian/CODING/Visualisation-0f-Sensoric-Data/ARROW_DOWN.png");
 
     QIcon right_i(right);
     QIcon left_i(left);

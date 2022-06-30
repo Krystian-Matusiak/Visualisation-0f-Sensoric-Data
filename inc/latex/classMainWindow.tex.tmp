@@ -34,7 +34,7 @@ void \mbox{\hyperlink{classMainWindow_a331d3e6dad11c24f1e8b786e4ffc3924}{set\+Bu
 \item 
 void \mbox{\hyperlink{classMainWindow_addc9d7d048db6c28978c085b949cd775}{set\+Labels}} ()
 \item 
-void \mbox{\hyperlink{classMainWindow_a5222646e2d14fd3d3676281a6e4693ea}{set\+Battery}} (double $\ast$battery\+\_\+state)
+void \mbox{\hyperlink{classMainWindow_a768d65a8b796be024da5e3ac524c839d}{set\+Battery}} (double battery\+\_\+state)
 \item 
 void \mbox{\hyperlink{classMainWindow_a2b4d6afa009628730895e64360c8fccc}{Right\+B\+\_\+\+Clicked}} ()
 \item 
@@ -137,11 +137,11 @@ Funkcja przedstawiająca wizualnie kierunek i prędkość kół za pomocą strza
 \doxysubsubsection{\texorpdfstring{setBackground}{setBackground}}
 {\footnotesize\ttfamily void Main\+Window\+::set\+Background (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
 
-Funkcja konfigurująca wygląd tła aplikacji. \mbox{\Hypertarget{classMainWindow_a5222646e2d14fd3d3676281a6e4693ea}\label{classMainWindow_a5222646e2d14fd3d3676281a6e4693ea}} 
+Funkcja konfigurująca wygląd tła aplikacji. \mbox{\Hypertarget{classMainWindow_a768d65a8b796be024da5e3ac524c839d}\label{classMainWindow_a768d65a8b796be024da5e3ac524c839d}} 
 \index{MainWindow@{MainWindow}!setBattery@{setBattery}}
 \index{setBattery@{setBattery}!MainWindow@{MainWindow}}
 \doxysubsubsection{\texorpdfstring{setBattery}{setBattery}}
-{\footnotesize\ttfamily void Main\+Window\+::set\+Battery (\begin{DoxyParamCaption}\item[{double $\ast$}]{battery\+\_\+state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+{\footnotesize\ttfamily void Main\+Window\+::set\+Battery (\begin{DoxyParamCaption}\item[{double}]{battery\+\_\+state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
 
 Funkcja przedstawiająca wizualnie stan naładowania akumulatora. 
 \begin{DoxyParams}[1]{Parameters}

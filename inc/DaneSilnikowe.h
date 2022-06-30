@@ -36,22 +36,22 @@ class DaneSilnikowe{
          *  dopisywanie nowej wartości na koniec tablicy i usuwanie pierwszej wartości.
             \param[in] new_val - wartość, która będzie wpisywana na koniec tablicy.
          */
-        void newPlotY(double *new_val);
+        void newPlotY(double new_val);
 
         /*! Funkcja przetrzymująca i aktualizująca tablicę danych z wypełnieniem sygnału PWM silnika prawego. Następnie tablica wykorzystywana jest do wygenerowania wykresu, poprzez
          *  dopisywanie nowej wartości na koniec tablicy i usuwanie pierwszej wartości.
             \param[in] new_val - wartość, która będzie wpisywana na koniec tablicy.
          */
-        void newPlotZ(double *new_val);
+        void newPlotZ(double new_val);
 
 
         //char info1[11][ROZM];
 
         /*! Wielkość, określają stan wypełnienia sygnału PWM (pulse width modulation) w procentach [%] */
-        double *pwm1=new double;
+        double pwm1;
 
         /*! Wielkość, określają stan wypełnienia sygnału PWM (pulse width modulation) w procentach [%] */
-        double *pwm2=new double;
+        double pwm2;
 
         /*! Zmienne, dotyczące kierunku jazdy (false - jazda w tył, true - jazda w przód) */
         bool dir_motor1=false;

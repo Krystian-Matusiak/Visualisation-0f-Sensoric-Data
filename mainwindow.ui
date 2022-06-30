@@ -521,13 +521,13 @@
      </item>
     </layout>
    </widget>
-   <widget class="QFrame" name="TEST">
+   <widget class="QFrame" name="MODE_FRAME">
     <property name="geometry">
      <rect>
-      <x>750</x>
-      <y>30</y>
+      <x>830</x>
+      <y>90</y>
       <width>151</width>
-      <height>111</height>
+      <height>51</height>
      </rect>
     </property>
     <property name="frameShape">
@@ -541,44 +541,9 @@
     </property>
     <layout class="QGridLayout" name="gridLayout_5">
      <item row="0" column="0">
-      <widget class="QLabel" name="label_13">
+      <widget class="QLabel" name="MODE_TEXT">
        <property name="text">
-        <string>testowanie1</string>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="1">
-      <widget class="QLabel" name="LW">
-       <property name="text">
-        <string/>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="0">
-      <widget class="QLabel" name="label_12">
-       <property name="text">
-        <string>testowanie2</string>
-       </property>
-      </widget>
-     </item>
-     <item row="2" column="0">
-      <widget class="QLabel" name="label_15">
-       <property name="text">
-        <string>testowanie3</string>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="1">
-      <widget class="QLabel" name="LW_2">
-       <property name="text">
-        <string/>
-       </property>
-      </widget>
-     </item>
-     <item row="2" column="1">
-      <widget class="QLabel" name="LW_3">
-       <property name="text">
-        <string/>
+        <string>Tryb ręczny</string>
        </property>
       </widget>
      </item>
@@ -591,7 +556,7 @@
      <x>0</x>
      <y>0</y>
      <width>1292</width>
-     <height>21</height>
+     <height>22</height>
     </rect>
    </property>
   </widget>

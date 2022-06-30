@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['ploty_21',['plotY',['../classDaneSilnikowe.html#a9fca47e2a2522495d13bd4502625eb8d',1,'DaneSilnikowe']]],
-  ['plotz_22',['plotZ',['../classDaneSilnikowe.html#a1f644f8100bfdf01abff3fff89c79a9c',1,'DaneSilnikowe']]],
-  ['pwm1_23',['pwm1',['../classDaneSilnikowe.html#ab7ee48f2e2ba76c556227fd4c15301fe',1,'DaneSilnikowe']]],
-  ['pwm2_24',['pwm2',['../classDaneSilnikowe.html#ac9c77ed7001eaf7344628d9bf9c848d1',1,'DaneSilnikowe']]]
+  ['receiver_25',['Receiver',['../classReceiver.html',1,'']]],
+  ['rightb_5fclicked_26',['RightB_Clicked',['../classMainWindow.html#a2b4d6afa009628730895e64360c8fccc',1,'MainWindow']]],
+  ['rightb_5freleased_27',['RightB_Released',['../classMainWindow.html#a2d4c336260671a8660b96b6064563217',1,'MainWindow']]]
 ];
